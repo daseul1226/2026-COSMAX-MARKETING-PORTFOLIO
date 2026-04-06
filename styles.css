@@ -1447,6 +1447,33 @@ body.js-enhanced [data-reveal].is-visible {
     font-size: 9.5pt;
   }
 
+  .projects-section {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  .case-card {
+    break-before: page;
+    page-break-before: always;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+    padding: 16px;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  .case-card:first-child {
+    break-before: auto;
+    page-break-before: auto;
+  }
+
+  .case-layout,
+  .case-layout.reverse {
+    grid-template-columns: minmax(220px, 0.68fr) minmax(0, 1fr) !important;
+    gap: 18px;
+    align-items: start;
+  }
+
   .case-layout.reverse .case-media,
   .case-layout.reverse .case-content {
     order: initial;
@@ -1506,12 +1533,11 @@ body.js-enhanced [data-reveal].is-visible {
   }
 
   .case-media img {
-    max-height: 88mm;
+    max-height: 82mm;
     object-fit: contain;
   }
 
   .profile-reference-card,
-  .case-card,
   .ready-intro,
   .ready-link-card,
   .workflow-card {
@@ -1538,6 +1564,54 @@ body.js-enhanced [data-reveal].is-visible {
   .closing-message,
   .profile-reference-card {
     margin-bottom: 10px;
+  }
+
+  .case-head {
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+
+  .case-meta {
+    font-size: 0.62rem;
+  }
+
+  .case-role {
+    font-size: 0.68rem;
+  }
+
+  .case-badge {
+    padding: 7px 11px;
+    font-size: 0.68rem;
+  }
+
+  .case-card h3 {
+    margin: 0 0 10px;
+    font-size: 14.5pt;
+    line-height: 1.2;
+  }
+
+  .case-body {
+    gap: 7px;
+  }
+
+  .case-body p {
+    font-size: 8.8pt;
+    line-height: 1.45;
+  }
+
+  .case-contribution {
+    margin-top: 4px;
+    padding-top: 10px;
+  }
+
+  .case-tags {
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .case-tags span {
+    padding: 6px 10px;
+    font-size: 0.64rem;
   }
 
   a {
