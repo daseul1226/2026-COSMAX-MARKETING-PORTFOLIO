@@ -1452,6 +1452,11 @@ body.js-enhanced [data-reveal].is-visible {
     break-before: page;
   }
 
+  .ready-section {
+    page-break-before: always;
+    break-before: page;
+  }
+
   .case-grid {
     gap: 8px;
   }
