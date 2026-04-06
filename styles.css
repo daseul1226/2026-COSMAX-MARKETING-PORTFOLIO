@@ -1412,7 +1412,6 @@ body.js-enhanced [data-reveal].is-visible {
   .roadmap-grid,
   .competency-grid,
   .project-grid,
-  .workflow-grid,
   .metric-grid,
   .profile-reference-card .profile-top,
   .case-layout,
@@ -1425,6 +1424,27 @@ body.js-enhanced [data-reveal].is-visible {
   .case-layout,
   .case-layout.reverse {
     gap: 18px;
+  }
+
+  .workflow-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 12px;
+  }
+
+  .workflow-step {
+    min-width: 0;
+    padding: 16px 14px;
+  }
+
+  .workflow-step span {
+    width: 40px;
+    height: 40px;
+    border-radius: 16px;
+  }
+
+  .workflow-step p {
+    margin-top: 12px;
+    font-size: 9.5pt;
   }
 
   .case-layout.reverse .case-media,
