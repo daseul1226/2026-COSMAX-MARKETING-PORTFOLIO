@@ -1468,17 +1468,29 @@ body.js-enhanced [data-reveal].is-visible {
     page-break-inside: avoid;
   }
 
+  .case-media img {
+    max-height: 88mm;
+    object-fit: contain;
+  }
+
   .profile-reference-card,
-  .history-item,
-  .competency-card,
   .case-card,
   .ready-intro,
   .ready-link-card,
-  .workflow-card,
+  .workflow-card {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .history-item,
+  .competency-card,
   .workflow-step,
   .roadmap-card,
   .closing-message,
-  .metric-card {
+  .metric-card,
+  .case-head,
+  .case-tags,
+  .workflow-head {
     break-inside: avoid-page;
     page-break-inside: avoid;
   }
