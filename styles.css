@@ -1290,3 +1290,196 @@ body.js-enhanced [data-reveal].is-visible {
     width: 100%;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: #fff;
+    color: #111;
+    font-size: 10.5pt;
+    line-height: 1.5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page-noise,
+  .site-header,
+  .hero-actions,
+  .case-shortcuts,
+  .project-modal,
+  .ready-link-card .button {
+    display: none !important;
+  }
+
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .section {
+    padding: 0 0 14mm;
+  }
+
+  .section:last-child {
+    padding-bottom: 0;
+  }
+
+  .hero {
+    min-height: auto;
+    gap: 14px;
+  }
+
+  .hero-copy,
+  .profile-card,
+  .timeline-card,
+  .project-card,
+  .ready-intro,
+  .ready-link-card,
+  .workflow-card,
+  .roadmap-card,
+  .project-note,
+  .competency-card,
+  .closing-message,
+  .profile-reference-card,
+  .case-card,
+  .workflow-step,
+  .metric-card,
+  .profile-block,
+  .opportunity-card {
+    border: 1px solid #d8c9c6;
+    background: #fff;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .hero-copy,
+  .hero-panel,
+  .profile-card,
+  .timeline-card,
+  .project-card,
+  .ready-intro,
+  .ready-link-card,
+  .workflow-card,
+  .roadmap-card,
+  .project-note,
+  .competency-card,
+  .closing-message,
+  .profile-reference-card,
+  .case-card {
+    padding: 18px;
+  }
+
+  .profile-shell,
+  .ready-grid,
+  .roadmap-grid,
+  .competency-grid,
+  .project-grid,
+  .workflow-grid,
+  .metric-grid,
+  .profile-reference-card .profile-top,
+  .case-layout,
+  .case-layout.reverse,
+  .profile-top,
+  .profile-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .case-layout,
+  .case-layout.reverse {
+    gap: 18px;
+  }
+
+  .case-layout.reverse .case-media,
+  .case-layout.reverse .case-content {
+    order: initial;
+  }
+
+  h1 {
+    font-size: 28pt;
+  }
+
+  .section-heading h2,
+  .profile-main h2 {
+    font-size: 22pt;
+  }
+
+  .case-card h3,
+  .roadmap-card h3,
+  .ready-intro h3,
+  .ready-link-card h3,
+  .timeline-head h3 {
+    font-size: 15pt;
+  }
+
+  .hero-subtitle,
+  .closing-message p {
+    font-size: 11pt;
+  }
+
+  .section-heading {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .workflow-card {
+    margin-top: 18px;
+  }
+
+  .history-list::before {
+    top: 22px;
+    bottom: 22px;
+  }
+
+  .profile-photo-wrap {
+    width: 180px;
+  }
+
+  .project-image-trigger {
+    display: block !important;
+    cursor: default;
+    background: transparent;
+    border: 0;
+  }
+
+  .case-media {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .profile-reference-card,
+  .history-item,
+  .competency-card,
+  .case-card,
+  .ready-intro,
+  .ready-link-card,
+  .workflow-card,
+  .workflow-step,
+  .roadmap-card,
+  .closing-message,
+  .metric-card {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  .case-card,
+  .workflow-card,
+  .roadmap-card,
+  .closing-message,
+  .profile-reference-card {
+    margin-bottom: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
