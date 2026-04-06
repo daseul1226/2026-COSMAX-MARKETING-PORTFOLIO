@@ -1,0 +1,16 @@
+<svg width="720" height="960" viewBox="0 0 720 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="960" rx="48" fill="#F4F7F8"/>
+  <rect x="56" y="56" width="608" height="848" rx="36" fill="url(#paint0_linear)"/>
+  <circle cx="360" cy="316" r="126" fill="#E2EEF0"/>
+  <path d="M360 486C239.602 486 142 583.602 142 704V760C142 778.778 157.222 794 176 794H544C562.778 794 578 778.778 578 760V704C578 583.602 480.398 486 360 486Z" fill="#E2EEF0"/>
+  <path d="M183 129H537" stroke="#A2B9C0" stroke-width="18" stroke-linecap="round"/>
+  <path d="M219 177H501" stroke="#B7CBD1" stroke-width="14" stroke-linecap="round"/>
+  <text x="360" y="855" text-anchor="middle" fill="#355262" font-family="Pretendard, Arial, sans-serif" font-size="34" font-weight="700">PROFILE IMAGE</text>
+  <text x="360" y="897" text-anchor="middle" fill="#62808E" font-family="Pretendard, Arial, sans-serif" font-size="22">Replace with your photo if desired</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="92" y1="92" x2="628" y2="868" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDFEFE"/>
+      <stop offset="1" stop-color="#EDF5F6"/>
+    </linearGradient>
+  </defs>
+</svg>
