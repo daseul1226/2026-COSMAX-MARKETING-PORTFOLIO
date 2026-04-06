@@ -1310,6 +1310,18 @@ body.js-enhanced [data-reveal].is-visible {
     print-color-adjust: exact;
   }
 
+  .site-shell {
+    overflow: visible;
+  }
+
+  body.js-enhanced [data-reveal],
+  body.js-enhanced [data-reveal="left"],
+  body.js-enhanced [data-reveal].is-visible {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   .page-noise,
   .site-header,
   .hero-actions,
