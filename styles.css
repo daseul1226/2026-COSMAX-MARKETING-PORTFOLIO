@@ -1452,14 +1452,23 @@ body.js-enhanced [data-reveal].is-visible {
     break-before: page;
   }
 
+  .case-grid {
+    gap: 8px;
+  }
+
   .case-card {
-    break-before: page;
-    page-break-before: always;
+    break-before: auto;
+    page-break-before: auto;
     break-inside: avoid-page;
     page-break-inside: avoid;
-    padding: 16px;
+    padding: 14px;
     margin-bottom: 0;
     box-shadow: none;
+  }
+
+  .case-card:nth-child(2n + 1) {
+    break-before: page;
+    page-break-before: always;
   }
 
   .case-card:first-child {
@@ -1469,8 +1478,8 @@ body.js-enhanced [data-reveal].is-visible {
 
   .case-layout,
   .case-layout.reverse {
-    grid-template-columns: minmax(220px, 0.68fr) minmax(0, 1fr) !important;
-    gap: 18px;
+    grid-template-columns: minmax(190px, 0.58fr) minmax(0, 1fr) !important;
+    gap: 14px;
     align-items: start;
   }
 
@@ -1533,7 +1542,7 @@ body.js-enhanced [data-reveal].is-visible {
   }
 
   .case-media img {
-    max-height: 82mm;
+    max-height: 52mm;
     object-fit: contain;
   }
 
@@ -1568,7 +1577,7 @@ body.js-enhanced [data-reveal].is-visible {
 
   .case-head {
     gap: 12px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   .case-meta {
@@ -1585,33 +1594,33 @@ body.js-enhanced [data-reveal].is-visible {
   }
 
   .case-card h3 {
-    margin: 0 0 10px;
-    font-size: 14.5pt;
+    margin: 0 0 8px;
+    font-size: 12.4pt;
     line-height: 1.2;
   }
 
   .case-body {
-    gap: 7px;
+    gap: 5px;
   }
 
   .case-body p {
-    font-size: 8.8pt;
-    line-height: 1.45;
+    font-size: 7.8pt;
+    line-height: 1.38;
   }
 
   .case-contribution {
-    margin-top: 4px;
-    padding-top: 10px;
+    margin-top: 3px;
+    padding-top: 8px;
   }
 
   .case-tags {
-    gap: 6px;
-    margin-top: 12px;
+    gap: 5px;
+    margin-top: 10px;
   }
 
   .case-tags span {
-    padding: 6px 10px;
-    font-size: 0.64rem;
+    padding: 5px 8px;
+    font-size: 0.58rem;
   }
 
   a {
